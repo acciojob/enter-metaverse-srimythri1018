@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,7 @@
   <title>Metaverse Example</title>
 </head>
 <body>
-  <h1 id="status">Enter the Metaverse</h1>
+  <p id="status">Enter the Metaverse <h1></h1></p>
   <button id="enterBtn">Enter</button>
 
   <script>
@@ -16,7 +15,7 @@
 
     // Function to handle button click
     function updateStatus() {
-      statusParagraph.textContent = 'Entered Metaverse';
+      statusParagraph.innerHTML = 'Entered Metaverse <h1></h1>';
     }
 
     // Event listener for button click
