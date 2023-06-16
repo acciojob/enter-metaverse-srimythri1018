@@ -1,16 +1,26 @@
+
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Metaverse Example</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <h1 id="status">Enter the Metaverse</h1>
+  <button id="enterBtn">Enter</button>
 
+  <script>
+    // Get the necessary elements
+    const statusParagraph = document.getElementById('status');
+    const enterButton = document.getElementById('enterBtn');
+
+    // Function to handle button click
+    function updateStatus() {
+      statusParagraph.textContent = 'Entered Metaverse';
+    }
+
+    // Event listener for button click
+    enterButton.addEventListener('click', updateStatus);
+  </script>
 </body>
-
 </html>
